@@ -18,6 +18,7 @@ namespace MadLibs
             {
                 Console.Write($"Give me a {blank}: ");
                 string answer = Console.ReadLine();
+                Console.WriteLine(answer);
                 Answers.Add(answer);
             }
         }

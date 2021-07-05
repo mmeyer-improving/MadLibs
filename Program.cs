@@ -6,10 +6,12 @@ namespace MadLibs
     {
         static void Main(string[] args)
         {
+            PromptData promptData = new PromptData();
+
             string anotherPrompt;
             do
             {
-                Prompt prompt = new Prompt();
+                Prompt prompt = promptData.GetPrompt();
                 prompt.FillInBlanks();
                 prompt.DisplayMadLib();
                 Console.WriteLine("Do you want another Mad Lib? Type 'y' for one more, or any other key to quit ");
